@@ -12,7 +12,7 @@ const toggleUserState = (allUsers, userName) => {
         user.name === userName ? { ...user, active: !user.active } : user,
       );
       resolve(updatedUsers);
-    }, 2000);
+    });
   });
 };
 
